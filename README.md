@@ -3,15 +3,9 @@
 
 <img src="./hero.svg" width="100%" alt="Animated cyberpunk DevOps hero" />
 <img src="./about-cards.svg" width="100%" alt="Cyberpunk DevOps terminal" />
-
-</div>
-
 <div align="center">
   <img src="./cloud-infrastructure.svg" width="100%" alt="3D cyberpunk Cloud and Infrastructure card"/>
 </div>
-
-<h2 align="center">🚀 Featured Project</h2>
-
 <div align="center">
   <a href="https://github.com/Ahmad-000/mern-devops-automation">
     <img src="./featured-project.svg"
@@ -19,6 +13,13 @@
          alt="MERN DevOps Automation project with Docker, GitHub Actions and AWS"/>
   </a>
 </div>
+
+</div>
+
+
+
+
+
 
 📊 3D GitHub Contributions
 
