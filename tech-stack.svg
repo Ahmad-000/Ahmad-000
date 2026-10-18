@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#050914"/>
+      <stop offset=".55" stop-color="#10102a"/>
+      <stop offset="1" stop-color="#070b18"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00f5ff"/>
+      <stop offset=".55" stop-color="#647cff"/>
+      <stop offset="1" stop-color="#d946ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#172b46"/>
+      <stop offset="1" stop-color="#15102c"/>
+    </linearGradient>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0V25" fill="none" stroke="#53658e" stroke-opacity=".17"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family: Consolas, "Courier New", monospace; }
+      .title { fill: #f1f7ff; font-size: 19px; font-weight: bold; }
+      .sub { fill: #9aafd0; font-size: 11px; letter-spacing: 1.4px; }
+      .chip { fill: #dceeff; font-size: 13px; font-weight: bold; }
+      .num { fill: #67f7ff; font-size: 11px; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="440" rx="22" fill="url(#bg)"/>
+  <rect width="1000" height="440" rx="22" fill="url(#grid)"/>
+
+  <ellipse cx="500" cy="220" rx="400" ry="180" fill="#6d28d9" opacity=".08">
+    <animate attributeName="opacity" values=".03;.13;.03" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <text x="30" y="38" class="mono num">AHMAD RAZA // TECH STACK</text>
+  <text x="970" y="38" text-anchor="end" class="mono sub">TOOLS • SYSTEMS • AUTOMATION</text>
+  <path d="M30 54H970" stroke="url(#edge)" opacity=".8"/>
+
+  <!-- Cloud card -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="4s" repeatCount="indefinite"/>
+    <path d="M31 82 L477 82 L490 94 L490 185 L477 197 L31 197 Z" fill="#080d1b" stroke="#00e5ff" stroke-opacity=".65"/>
+    <rect x="31" y="82" width="446" height="103" rx="10" fill="url(#panel)" stroke="#00e5ff" stroke-opacity=".75"/>
+    <path d="M31 112H477" stroke="#31516f"/>
+    <text x="49" y="102" class="mono num">01 / CLOUD & INFRASTRUCTURE</text>
+
+    <rect x="49" y="126" width="91" height="39" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff"/>
+    <text x="94" y="150" text-anchor="middle" class="mono chip">AWS</text>
+    <rect x="150" y="126" width="91" height="39" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff" stroke-opacity=".75"/>
+    <text x="195" y="150" text-anchor="middle" class="mono chip">AZURE</text>
+    <rect x="251" y="126" width="91" height="39" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#a855f7"/>
+    <text x="296" y="150" text-anchor="middle" class="mono chip">LINUX</text>
+    <rect x="352" y="126" width="107" height="39" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#a855f7"/>
+    <text x="405" y="150" text-anchor="middle" class="mono chip">TERRAFORM</text>
+  </g>
+
+  <!-- Containers and CI/CD -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 4;0 0" dur="4.5s" repeatCount="indefinite"/>
+    <path d="M523 82 L956 82 L969 94 L969 185 L956 197 L523 197 Z" fill="#080d1b" stroke="#b56cff" stroke-opacity=".7"/>
+    <rect x="523" y="82" width="433" height="103" rx="10" fill="url(#panel)" stroke="#b56cff" stroke-opacity=".8"/>
+    <path d="M523 112H956" stroke="#49366d"/>
+    <text x="541" y="102" class="mono" fill="#d5a3ff" font-size="11" letter-spacing="1.4">02 / CONTAINERS & CI/CD</text>
+
+    <rect x="541" y="126" width="116" height="39" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#b56cff"/>
+    <text x="599" y="150" text-anchor="middle" class="mono chip">DOCKER</text>
+    <rect x="667" y="126" width="137" height="39" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff"/>
+    <text x="735" y="150" text-anchor="middle" class="mono chip">GITHUB ACTIONS</text>
+    <rect x="814" y="126" width="124" height="39" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#b56cff"/>
+    <text x="876" y="150" text-anchor="middle" class="mono chip">GIT / GITHUB</text>
+  </g>
+
+  <!-- Development -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3.8s" repeatCount="indefinite"/>
+    <path d="M31 218 L477 218 L490 230 L490 333 L477 345 L31 345 Z" fill="#080d1b" stroke="#00e5ff" stroke-opacity=".65"/>
+    <rect x="31" y="218" width="446" height="115" rx="10" fill="url(#panel)" stroke="#00e5ff" stroke-opacity=".75"/>
+    <path d="M31 248H477" stroke="#31516f"/>
+    <text x="49" y="238" class="mono num">03 / DEVELOPMENT</text>
+
+    <rect x="49" y="265" width="119" height="44" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff"/>
+    <text x="108" y="292" text-anchor="middle" class="mono chip">JAVASCRIPT</text>
+    <rect x="178" y="265" width="91" height="44" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#b56cff"/>
+    <text x="223" y="292" text-anchor="middle" class="mono chip">NODE.JS</text>
+    <rect x="279" y="265" width="83" height="44" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff"/>
+    <text x="320" y="292" text-anchor="middle" class="mono chip">REACT</text>
+    <rect x="372" y="265" width="87" height="44" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#b56cff"/>
+    <text x="415" y="292" text-anchor="middle" class="mono chip">MONGODB</text>
+  </g>
+
+  <!-- Learning roadmap -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 3;0 0" dur="4.2s" repeatCount="indefinite"/>
+    <path d="M523 218 L956 218 L969 230 L969 333 L956 345 L523 345 Z" fill="#080d1b" stroke="#b56cff" stroke-opacity=".7"/>
+    <rect x="523" y="218" width="433" height="115" rx="10" fill="url(#panel)" stroke="#b56cff" stroke-opacity=".8"/>
+    <path d="M523 248H956" stroke="#49366d"/>
+    <text x="541" y="238" class="mono" fill="#d5a3ff" font-size="11" letter-spacing="1.4">04 / NEXT ON MY ROADMAP</text>
+
+    <g class="mono chip" font-size="12">
+      <rect x="541" y="265" width="117" height="29" rx="6" fill="#a855f7" fill-opacity=".1" stroke="#a855f7"/>
+      <text x="599" y="284" text-anchor="middle">KUBERNETES</text>
+      <rect x="668" y="265" width="115" height="29" rx="6" fill="#00d9ff" fill-opacity=".08" stroke="#00e5ff"/>
+      <text x="725" y="284" text-anchor="middle">ANSIBLE</text>
+      <rect x="793" y="265" width="145" height="29" rx="6" fill="#a855f7" fill-opacity=".1" stroke="#a855f7"/>
+      <text x="865" y="284" text-anchor="middle">MONITORING</text>
+    </g>
+    <text x="541" y="317" class="mono sub">LEARNING STEP BY STEP</text>
+  </g>
+
+  <!-- Animated scan line -->
+  <rect x="30" y="75" width="940" height="2" fill="#67f7ff" opacity=".5" filter="url(#glow)">
+    <animate attributeName="y" values="75;348;75" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;.7;0" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <path d="M30 371H970" stroke="url(#edge)" opacity=".7"/>
+  <text x="30" y="397" class="mono sub">BUILDING PRACTICAL SKILLS THROUGH PROJECTS</text>
+  <text x="970" y="397" text-anchor="end" class="mono" fill="#67f7ff" font-size="11">LEARN → BUILD → AUTOMATE</text>
+  <text x="500" y="424" text-anchor="middle" class="mono sub">CLOUD NATIVE MINDSET // CONTINUOUS IMPROVEMENT</text>
+</svg>
