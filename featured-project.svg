@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070b1b"/>
+      <stop offset="100%" stop-color="#15102d"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#172d49"/>
+      <stop offset="100%" stop-color="#17132f"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00eaff"/>
+      <stop offset="55%" stop-color="#7b83ff"/>
+      <stop offset="100%" stop-color="#d45bff"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#6484ad" stroke-opacity=".12"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title{font:700 27px Arial,sans-serif;fill:#f5f7ff}
+      .label{font:11px Arial,sans-serif;fill:#81eaff;letter-spacing:3px}
+      .body{font:14px Arial,sans-serif;fill:#b5c5e2}
+      .chip{font:700 13px Arial,sans-serif;fill:#eaf5ff}
+      .small{font:11px Arial,sans-serif;fill:#91a7c9;letter-spacing:1px}
+      .float{animation:float 4s ease-in-out infinite}
+      .float2{animation:float 4.8s ease-in-out infinite 1s}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    </style>
+  </defs>
+
+  <rect width="1000" height="430" rx="22" fill="url(#bg)"/>
+  <rect width="1000" height="430" rx="22" fill="url(#grid)"/>
+  <circle cx="850" cy="100" r="180" fill="#8b5cf6" opacity=".07"/>
+  <circle cx="120" cy="350" r="150" fill="#00eaff" opacity=".05"/>
+
+  <text x="42" y="42" class="label">FEATURED PROJECT / 001</text>
+  <text x="958" y="42" text-anchor="end" class="small">DEVOPS PORTFOLIO</text>
+
+  <!-- Main 3D card -->
+  <path d="M48 72 H932 L958 96 V337 L932 361 H48 L24 337 V96 Z"
+        fill="#030615" opacity=".75" transform="translate(0 9)"/>
+  <path d="M48 72 H932 L958 96 V337 L932 361 H48 L24 337 V96 Z"
+        fill="url(#glass)" stroke="url(#neon)" stroke-width="1.7"/>
+  <path d="M48 361 H932 L958 337 V350 L932 375 H48 L24 351 V337 Z"
+        fill="#382d75" opacity=".85"/>
+  <path d="M932 72 L958 96 V337 L932 361 Z" fill="#8b5cf6" opacity=".12"/>
+
+  <!-- Terminal window -->
+  <g>
+    <rect x="54" y="95" width="365" height="229" rx="12"
+          fill="#070d1c" stroke="#34577d" stroke-width="1.2"/>
+    <path d="M54 107 Q54 95 66 95 H407 Q419 95 419 107 V124 H54 Z"
+          fill="#182640"/>
+    <circle cx="73" cy="110" r="4" fill="#ff6b7a"/>
+    <circle cx="88" cy="110" r="4" fill="#ffc857"/>
+    <circle cx="103" cy="110" r="4" fill="#39e6a5"/>
+    <text x="126" y="114" font-family="monospace" font-size="10" fill="#91a7c9">deployment-pipeline</text>
+
+    <text x="74" y="154" font-family="monospace" font-size="13" fill="#00eaff">$ git push origin main</text>
+    <text x="74" y="180" font-family="monospace" font-size="12" fill="#b5c5e2">Starting CI/CD workflow...</text>
+    <text x="74" y="205" font-family="monospace" font-size="12" fill="#b5c5e2">Building Docker images</text>
+    <text x="74" y="230" font-family="monospace" font-size="12" fill="#b5c5e2">Deploying to AWS EC2</text>
+    <text x="74" y="263" font-family="monospace" font-size="12" fill="#39e6a5">● Pipeline automation</text>
+    <text x="74" y="286" font-family="monospace" font-size="12" fill="#39e6a5">● Containerized services</text>
+    <text x="74" y="309" font-family="monospace" font-size="12" fill="#39e6a5">● AWS deployment</text>
+  </g>
+
+  <!-- Project details -->
+  <text x="450" y="111" class="label">MERN + AWS</text>
+  <text x="450" y="151" class="title">MERN DevOps</text>
+  <text x="450" y="183" class="title">Automation</text>
+  <text x="450" y="215" class="body">A portfolio project focused on</text>
+  <text x="450" y="236" class="body">containerization and deployment</text>
+  <text x="450" y="257" class="body">automation for a MERN application.</text>
+
+  <!-- Technology chips -->
+  <g class="float">
+    <rect x="450" y="278" width="90" height="29" rx="8" fill="#122b40" stroke="#00dfff" stroke-opacity=".8"/>
+    <text x="495" y="297" text-anchor="middle" class="chip">DOCKER</text>
+  </g>
+  <g class="float2">
+    <rect x="550" y="278" width="132" height="29" rx="8" fill="#201b42" stroke="#8b7cff" stroke-opacity=".9"/>
+    <text x="616" y="297" text-anchor="middle" class="chip">GITHUB ACTIONS</text>
+  </g>
+  <g class="float">
+    <rect x="692" y="278" width="90" height="29" rx="8" fill="#30213e" stroke="#d45bff" stroke-opacity=".8"/>
+    <text x="737" y="297" text-anchor="middle" class="chip">AWS EC2</text>
+  </g>
+
+  <text x="450" y="340" class="small">BUILD  /  AUTOMATE  /  DEPLOY</text>
+
+  <path d="M42 397 H958" stroke="url(#neon)" stroke-opacity=".5"/>
+  <text x="44" y="417" class="small">PROJECT SOURCE: GITHUB</text>
+  <text x="956" y="417" text-anchor="end" class="small">ENGINEERING IN PROGRESS</text>
+</svg>
