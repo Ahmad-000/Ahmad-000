@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="230" viewBox="0 0 1000 230" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080D1B"/>
+      <stop offset=".5" stop-color="#11102B"/>
+      <stop offset="1" stop-color="#07151F"/>
+    </linearGradient>
+    <linearGradient id="line" x1="70" y1="0" x2="930" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#00F5FF"/>
+      <stop offset="1" stop-color="#B44CFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="title" x1="300" y1="75" x2="700" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#65F7FF"/>
+      <stop offset=".55" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C69BFF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#6D8DFF" stroke-opacity=".09" fill="none"/>
+    </pattern>
+    <clipPath id="clip">
+      <rect width="1000" height="230" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1000" height="230" rx="22" fill="url(#bg)"/>
+    <rect width="1000" height="230" fill="url(#grid)"/>
+
+    <path d="M0 38H210L236 12H370" stroke="#00E5FF" stroke-opacity=".35"/>
+    <path d="M1000 188H800L776 212H630" stroke="#B44CFF" stroke-opacity=".4"/>
+    <path d="M0 48H1000M0 182H1000" stroke="#7188FF" stroke-opacity=".08"/>
+
+    <g fill="#00F5FF" filter="url(#glow)">
+      <circle cx="120" cy="80" r="2.5"/>
+      <circle cx="875" cy="144" r="2.5"/>
+      <circle cx="205" cy="168" r="1.5"/>
+      <circle cx="790" cy="63" r="1.5"/>
+    </g>
+
+    <g opacity=".65" stroke="#00E5FF" stroke-width="1.2">
+      <path d="M82 105H135L148 92H172"/>
+      <path d="M828 130H865L879 116H918" stroke="#B44CFF"/>
+      <path d="M115 145H150" stroke-dasharray="3 5"/>
+      <path d="M850 88H888" stroke="#B44CFF" stroke-dasharray="3 5"/>
+    </g>
+
+    <g transform="translate(500 46)">
+      <path d="M-23 0L-10 -13H10L23 0L10 13H-10Z" stroke="#00F5FF" stroke-width="1.4" fill="#00F5FF" fill-opacity=".08" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-7 0L0 -7L7 0L0 7Z" fill="#00F5FF">
+        <animate attributeName="opacity" values=".45;1;.45" dur="2.4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <text x="500" y="91" text-anchor="middle" fill="url(#title)" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="2">
+      BUILD. AUTOMATE. DEPLOY.
+    </text>
+
+    <text x="500" y="119" text-anchor="middle" fill="#A9B8D6" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="3">
+      LEARNING EVERY DAY • SHIPPING WITH PURPOSE
+    </text>
+
+    <g transform="translate(500 151)">
+      <rect x="-178" y="-13" width="356" height="27" rx="13.5" fill="#111B32" stroke="#334A72"/>
+      <circle cx="-151" cy="0" r="3" fill="#00F5FF">
+        <animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="4" text-anchor="middle" fill="#D5E6FF" font-family="Consolas,monospace" font-size="12">
+        Ahmad Raza  /  DevOps Journey
+      </text>
+      <circle cx="151" cy="0" r="3" fill="#B44CFF">
+        <animate attributeName="opacity" values="1;.35;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <path d="M80 198H920" stroke="url(#line)" stroke-width="1.5"/>
+    <path d="M80 198H260" stroke="#00F5FF" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="d" values="M80 198H260;M740 198H920;M80 198H260" dur="6s" repeatCount="indefinite"/>
+    </path>
+
+    <text x="500" y="218" text-anchor="middle" fill="#6F82A9" font-family="Segoe UI,Arial,sans-serif" font-size="10" letter-spacing="2">
+      THANKS FOR VISITING MY PROFILE
+    </text>
+  </g>
+</svg>
