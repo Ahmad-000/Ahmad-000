@@ -67,7 +67,7 @@ Development
 ---
 
 <div align="center">
-  <img src="./profile-green-animate.svg" width="100%" alt="Animated 3D GitHub contribution graph" />
+  <img src="./profile-night-green.svg" width="100%" alt="Animated 3D GitHub contribution graph" />
 </div>
 
 ---
@@ -103,6 +103,20 @@ Development
 <br/><br/>
 
 Open to DevOps, Cloud Engineering, and CI/CD opportunities.
+
+</div>
+
+<div align="center">
+
+👀 Profile Visitors
+
+<img src="https://komarev.com/ghpvc/?username=Ahmad-000&label=Profile%20Views&color=00D9FF&style=for-the-badge" alt="Profile visitor counter" />
+
+<br/><br/>
+
+Thanks for visiting my profile!
+
+Let's build, automate, and deploy something great. 🚀
 
 </div>
 
