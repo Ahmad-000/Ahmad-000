@@ -15,11 +15,17 @@ Building reliable applications through automation, containers, and cloud technol
 
 ---
 
-## 🛠️ Technologies & Tools
-
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=linux,docker,aws,azure,githubactions,git,github,terraform" alt="Technologies and tools" />
+🛠️ Technologies & Tools
+
+Cloud & DevOps
+
+<img src="https://skillicons.dev/icons?i=aws,azure,docker,linux,githubactions,git,github,terraform" alt="AWS, Azure, Docker, Linux, GitHub Actions, Git, GitHub and Terraform" />
+
+Development
+
+<img src="https://skillicons.dev/icons?i=javascript,nodejs,react,mongodb,express" alt="JavaScript, Node.js, React, MongoDB and Express" />
 
 </div>
 
