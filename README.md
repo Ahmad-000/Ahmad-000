@@ -2,6 +2,7 @@
 <div align="center">
 
 <img src="./hero.svg" width="100%" alt="Animated cyberpunk DevOps hero" />
+<img src="./about-cards.svg" width="100%" alt="Cyberpunk DevOps terminal" />
 
 </div>
 
