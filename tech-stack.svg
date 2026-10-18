@@ -1,125 +1,226 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#050914"/>
-      <stop offset=".55" stop-color="#10102a"/>
-      <stop offset="1" stop-color="#070b18"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050914"/>
+      <stop offset=".52" stop-color="#10132c"/>
+      <stop offset="1" stop-color="#080817"/>
     </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#00f5ff"/>
-      <stop offset=".55" stop-color="#647cff"/>
+
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19344c" stop-opacity=".97"/>
+      <stop offset=".45" stop-color="#101c35" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#24133e" stop-opacity=".98"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00f5ff"/>
+      <stop offset=".5" stop-color="#6988ff"/>
       <stop offset="1" stop-color="#d946ef"/>
     </linearGradient>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#172b46"/>
-      <stop offset="1" stop-color="#15102c"/>
+
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="1" stop-color="#2563eb"/>
     </linearGradient>
-    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
-      <path d="M25 0H0V25" fill="none" stroke="#53658e" stroke-opacity=".17"/>
+
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="chipGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#203c57" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#11152b" stop-opacity=".98"/>
+    </linearGradient>
+
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#6b8bbd" stroke-opacity=".12" stroke-width=".8"/>
     </pattern>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="190%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="9" result="blur"/>
+      <feOffset dx="0" dy="12" result="offset"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".65"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
     <style>
-      .mono { font-family: Consolas, "Courier New", monospace; }
-      .title { fill: #f1f7ff; font-size: 19px; font-weight: bold; }
-      .sub { fill: #9aafd0; font-size: 11px; letter-spacing: 1.4px; }
-      .chip { fill: #dceeff; font-size: 13px; font-weight: bold; }
-      .num { fill: #67f7ff; font-size: 11px; letter-spacing: 1px; }
+      .mono {
+        font-family: Consolas, "Courier New", monospace;
+      }
+      .heading {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 29px;
+        font-weight: 700;
+        fill: #f1f7ff;
+        letter-spacing: .5px;
+      }
+      .eyebrow {
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        fill: #67f7ff;
+      }
+      .chipText {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        fill: #eff8ff;
+        letter-spacing: .5px;
+      }
+      .micro {
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        fill: #91a9cc;
+      }
     </style>
   </defs>
 
-  <rect width="1000" height="440" rx="22" fill="url(#bg)"/>
-  <rect width="1000" height="440" rx="22" fill="url(#grid)"/>
+  <!-- Background -->
+  <rect width="1000" height="360" rx="24" fill="url(#background)"/>
+  <rect width="1000" height="360" rx="24" fill="url(#grid)"/>
 
-  <ellipse cx="500" cy="220" rx="400" ry="180" fill="#6d28d9" opacity=".08">
-    <animate attributeName="opacity" values=".03;.13;.03" dur="5s" repeatCount="indefinite"/>
+  <!-- Ambient light -->
+  <ellipse cx="230" cy="180" rx="240" ry="130" fill="#00d9ff" opacity=".07" filter="url(#softGlow)">
+    <animate attributeName="opacity" values=".035;.11;.035" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="790" cy="180" rx="220" ry="130" fill="#a855f7" opacity=".09" filter="url(#softGlow)">
+    <animate attributeName="opacity" values=".04;.14;.04" dur="4.5s" repeatCount="indefinite"/>
   </ellipse>
 
-  <text x="30" y="38" class="mono num">AHMAD RAZA // TECH STACK</text>
-  <text x="970" y="38" text-anchor="end" class="mono sub">TOOLS • SYSTEMS • AUTOMATION</text>
-  <path d="M30 54H970" stroke="url(#edge)" opacity=".8"/>
+  <!-- Perspective floor accents -->
+  <path d="M40 318 L230 282 H770 L960 318" fill="none" stroke="#00e5ff" stroke-opacity=".18"/>
+  <path d="M110 338 L270 306 H730 L890 338" fill="none" stroke="#a855f7" stroke-opacity=".22"/>
 
-  <!-- Cloud card -->
+  <!-- Outer floating card shadow -->
+  <path d="M105 66 L871 66 L910 94 L910 277 L871 305 L105 305 L72 280 L72 92 Z"
+        fill="#02040b" opacity=".8" filter="url(#shadow)"/>
+
+  <!-- Extruded 3D right side -->
+  <path d="M871 66 L910 94 L910 277 L871 305 Z"
+        fill="#221747" stroke="#a855f7" stroke-opacity=".85" stroke-width="1.5"/>
+
+  <!-- Extruded 3D top face -->
+  <path d="M105 66 L871 66 L910 94 L145 94 Z"
+        fill="#1a3150" stroke="#00e5ff" stroke-opacity=".8" stroke-width="1.4"/>
+
+  <!-- Extruded 3D lower face -->
+  <path d="M105 305 L871 305 L910 277 L145 277 Z"
+        fill="#111329" stroke="#a855f7" stroke-opacity=".75" stroke-width="1.3"/>
+
+  <!-- Main glass panel -->
+  <rect x="72" y="92" width="799" height="185" rx="14"
+        fill="url(#glass)" stroke="url(#neon)" stroke-width="1.7"/>
+
+  <!-- Glowing border accent -->
+  <path d="M92 93 H390" stroke="#00f5ff" stroke-width="2" filter="url(#glow)"/>
+  <path d="M585 276 H849" stroke="#c084fc" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- Corner details -->
+  <path d="M92 115 V106 Q92 102 98 102 H124"
+        fill="none" stroke="#67f7ff" stroke-width="2"/>
+  <path d="M849 253 V263 Q849 267 843 267 H817"
+        fill="none" stroke="#c084fc" stroke-width="2"/>
+
+  <!-- Card heading -->
+  <text x="112" y="128" class="eyebrow">01 / CLOUD &amp; INFRASTRUCTURE</text>
+  <text x="112" y="165" class="heading">Cloud Infrastructure</text>
+  <text x="849" y="126" text-anchor="end" class="micro">CORE TOOLCHAIN</text>
+
+  <!-- Header separator -->
+  <path d="M112 181 H831" stroke="#577394" stroke-opacity=".5"/>
+  <path d="M112 181 H280" stroke="#00e5ff" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!-- AWS chip: 3D base -->
   <g>
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="4s" repeatCount="indefinite"/>
-    <path d="M31 82 L477 82 L490 94 L490 185 L477 197 L31 197 Z" fill="#080d1b" stroke="#00e5ff" stroke-opacity=".65"/>
-    <rect x="31" y="82" width="446" height="103" rx="10" fill="url(#panel)" stroke="#00e5ff" stroke-opacity=".75"/>
-    <path d="M31 112H477" stroke="#31516f"/>
-    <text x="49" y="102" class="mono num">01 / CLOUD & INFRASTRUCTURE</text>
-
-    <rect x="49" y="126" width="91" height="39" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff"/>
-    <text x="94" y="150" text-anchor="middle" class="mono chip">AWS</text>
-    <rect x="150" y="126" width="91" height="39" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff" stroke-opacity=".75"/>
-    <text x="195" y="150" text-anchor="middle" class="mono chip">AZURE</text>
-    <rect x="251" y="126" width="91" height="39" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#a855f7"/>
-    <text x="296" y="150" text-anchor="middle" class="mono chip">LINUX</text>
-    <rect x="352" y="126" width="107" height="39" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#a855f7"/>
-    <text x="405" y="150" text-anchor="middle" class="mono chip">TERRAFORM</text>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;0 -3;0 0" dur="4s" repeatCount="indefinite"/>
+    <path d="M112 207 L274 207 L286 216 L124 216 Z"
+          fill="#07111e" stroke="#00e5ff" stroke-opacity=".7"/>
+    <rect x="112" y="197" width="162" height="60" rx="9"
+          fill="url(#chipGlass)" stroke="#00e5ff" stroke-width="1.2"/>
+    <path d="M123 198 H263" stroke="#67f7ff" stroke-opacity=".65"/>
+    <circle cx="135" cy="227" r="11" fill="#ff9900" fill-opacity=".18" stroke="#ffb347"/>
+    <path d="M128 228 Q135 234 142 228 M130 224 Q135 227 140 224"
+          fill="none" stroke="#ffb347" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="202" y="234" text-anchor="middle" class="chipText">AWS</text>
   </g>
 
-  <!-- Containers and CI/CD -->
+  <!-- Azure chip -->
   <g>
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 4;0 0" dur="4.5s" repeatCount="indefinite"/>
-    <path d="M523 82 L956 82 L969 94 L969 185 L956 197 L523 197 Z" fill="#080d1b" stroke="#b56cff" stroke-opacity=".7"/>
-    <rect x="523" y="82" width="433" height="103" rx="10" fill="url(#panel)" stroke="#b56cff" stroke-opacity=".8"/>
-    <path d="M523 112H956" stroke="#49366d"/>
-    <text x="541" y="102" class="mono" fill="#d5a3ff" font-size="11" letter-spacing="1.4">02 / CONTAINERS & CI/CD</text>
-
-    <rect x="541" y="126" width="116" height="39" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#b56cff"/>
-    <text x="599" y="150" text-anchor="middle" class="mono chip">DOCKER</text>
-    <rect x="667" y="126" width="137" height="39" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff"/>
-    <text x="735" y="150" text-anchor="middle" class="mono chip">GITHUB ACTIONS</text>
-    <rect x="814" y="126" width="124" height="39" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#b56cff"/>
-    <text x="876" y="150" text-anchor="middle" class="mono chip">GIT / GITHUB</text>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;0 3;0 0" dur="4.4s" repeatCount="indefinite"/>
+    <path d="M300 207 L462 207 L474 216 L312 216 Z"
+          fill="#07111e" stroke="#00e5ff" stroke-opacity=".7"/>
+    <rect x="300" y="197" width="162" height="60" rx="9"
+          fill="url(#chipGlass)" stroke="#399cff" stroke-width="1.2"/>
+    <path d="M311 198 H451" stroke="#67c8ff" stroke-opacity=".65"/>
+    <path d="M321 218 L330 211 L339 237 H330 Z M330 211 L342 211 L353 237 H339 Z"
+          fill="#50b8ff"/>
+    <text x="400" y="234" text-anchor="middle" class="chipText">AZURE</text>
   </g>
 
-  <!-- Development -->
+  <!-- Linux chip -->
   <g>
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="3.8s" repeatCount="indefinite"/>
-    <path d="M31 218 L477 218 L490 230 L490 333 L477 345 L31 345 Z" fill="#080d1b" stroke="#00e5ff" stroke-opacity=".65"/>
-    <rect x="31" y="218" width="446" height="115" rx="10" fill="url(#panel)" stroke="#00e5ff" stroke-opacity=".75"/>
-    <path d="M31 248H477" stroke="#31516f"/>
-    <text x="49" y="238" class="mono num">03 / DEVELOPMENT</text>
-
-    <rect x="49" y="265" width="119" height="44" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff"/>
-    <text x="108" y="292" text-anchor="middle" class="mono chip">JAVASCRIPT</text>
-    <rect x="178" y="265" width="91" height="44" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#b56cff"/>
-    <text x="223" y="292" text-anchor="middle" class="mono chip">NODE.JS</text>
-    <rect x="279" y="265" width="83" height="44" rx="7" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff"/>
-    <text x="320" y="292" text-anchor="middle" class="mono chip">REACT</text>
-    <rect x="372" y="265" width="87" height="44" rx="7" fill="#a855f7" fill-opacity=".12" stroke="#b56cff"/>
-    <text x="415" y="292" text-anchor="middle" class="mono chip">MONGODB</text>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;0 -3;0 0" dur="3.8s" repeatCount="indefinite"/>
+    <path d="M488 207 L650 207 L662 216 L500 216 Z"
+          fill="#07111e" stroke="#c084fc" stroke-opacity=".7"/>
+    <rect x="488" y="197" width="162" height="60" rx="9"
+          fill="url(#chipGlass)" stroke="#a855f7" stroke-width="1.2"/>
+    <path d="M499 198 H639" stroke="#d5a3ff" stroke-opacity=".65"/>
+    <circle cx="520" cy="221" r="9" fill="#c084fc" fill-opacity=".2" stroke="#d5a3ff"/>
+    <circle cx="517" cy="219" r="1.3" fill="#f5eaff"/>
+    <circle cx="523" cy="219" r="1.3" fill="#f5eaff"/>
+    <path d="M517 224 Q520 227 523 224" fill="none" stroke="#f5eaff" stroke-width="1"/>
+    <text x="584" y="234" text-anchor="middle" class="chipText">LINUX</text>
   </g>
 
-  <!-- Learning roadmap -->
+  <!-- Terraform chip -->
   <g>
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 3;0 0" dur="4.2s" repeatCount="indefinite"/>
-    <path d="M523 218 L956 218 L969 230 L969 333 L956 345 L523 345 Z" fill="#080d1b" stroke="#b56cff" stroke-opacity=".7"/>
-    <rect x="523" y="218" width="433" height="115" rx="10" fill="url(#panel)" stroke="#b56cff" stroke-opacity=".8"/>
-    <path d="M523 248H956" stroke="#49366d"/>
-    <text x="541" y="238" class="mono" fill="#d5a3ff" font-size="11" letter-spacing="1.4">04 / NEXT ON MY ROADMAP</text>
-
-    <g class="mono chip" font-size="12">
-      <rect x="541" y="265" width="117" height="29" rx="6" fill="#a855f7" fill-opacity=".1" stroke="#a855f7"/>
-      <text x="599" y="284" text-anchor="middle">KUBERNETES</text>
-      <rect x="668" y="265" width="115" height="29" rx="6" fill="#00d9ff" fill-opacity=".08" stroke="#00e5ff"/>
-      <text x="725" y="284" text-anchor="middle">ANSIBLE</text>
-      <rect x="793" y="265" width="145" height="29" rx="6" fill="#a855f7" fill-opacity=".1" stroke="#a855f7"/>
-      <text x="865" y="284" text-anchor="middle">MONITORING</text>
-    </g>
-    <text x="541" y="317" class="mono sub">LEARNING STEP BY STEP</text>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;0 3;0 0" dur="4.6s" repeatCount="indefinite"/>
+    <path d="M676 207 L831 207 L843 216 L688 216 Z"
+          fill="#07111e" stroke="#c084fc" stroke-opacity=".7"/>
+    <rect x="676" y="197" width="155" height="60" rx="9"
+          fill="url(#chipGlass)" stroke="#a855f7" stroke-width="1.2"/>
+    <path d="M687 198 H820" stroke="#d5a3ff" stroke-opacity=".65"/>
+    <path d="M696 213 L707 219 L707 232 L696 226 Z M711 222 L722 228 L722 241 L711 235 Z"
+          fill="#a78bfa" stroke="#c4b5fd" stroke-width=".7"/>
+    <text x="770" y="234" text-anchor="middle" class="chipText" font-size="16">TERRAFORM</text>
   </g>
 
-  <!-- Animated scan line -->
-  <rect x="30" y="75" width="940" height="2" fill="#67f7ff" opacity=".5" filter="url(#glow)">
-    <animate attributeName="y" values="75;348;75" dur="7s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;.7;0" dur="7s" repeatCount="indefinite"/>
+  <!-- Moving scan light -->
+  <rect x="73" y="92" width="798" height="2" fill="#a5f3fc" opacity=".4">
+    <animate attributeName="y" values="93;273;93" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;.55;0" dur="6s" repeatCount="indefinite"/>
   </rect>
 
-  <path d="M30 371H970" stroke="url(#edge)" opacity=".7"/>
-  <text x="30" y="397" class="mono sub">BUILDING PRACTICAL SKILLS THROUGH PROJECTS</text>
-  <text x="970" y="397" text-anchor="end" class="mono" fill="#67f7ff" font-size="11">LEARN → BUILD → AUTOMATE</text>
-  <text x="500" y="424" text-anchor="middle" class="mono sub">CLOUD NATIVE MINDSET // CONTINUOUS IMPROVEMENT</text>
+  <!-- Footer -->
+  <text x="72" y="337" class="micro">CLOUD SYSTEMS</text>
+  <circle cx="209" cy="333" r="3" fill="#46ffb1" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;.3;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="222" y="337" class="micro">INFRASTRUCTURE AS CODE</text>
+  <text x="928" y="337" text-anchor="end" class="micro">BUILD / AUTOMATE / DEPLOY</text>
 </svg>
