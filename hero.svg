@@ -41,35 +41,66 @@
   <text x="72" y="63" fill="#a5f3fc" font-family="monospace" font-size="11">OPEN TO OPPORTUNITIES</text>
 
   <text x="42" y="126" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="21">Hi there, I'm</text>
-  <text x="40" y="179" fill="url(#neon)" font-family="Arial,sans-serif" font-size="42" font-weight="bold">Ahmad Raza</text>
+  <text x="40" y="179" fill="url(#neon)" font-family="Arial,sans-serif" font-size="42" font-weight="bold">Muhammad Ahmad Raza</text>
 
   <rect x="43" y="193" width="235" height="2" rx="1" fill="url(#neon)" filter="url(#glow)">
-    <animate attributeName="width" values="35;235;35" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="35;485;35" dur="5s" repeatCount="indefinite"/>
   </rect>
 
   <text x="42" y="232" fill="#67e8f9" font-family="monospace" font-size="17" font-weight="bold">Aspiring DevOps Engineer</text>
   <text x="42" y="266" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="14">Building reliable deployments through</text>
   <text x="42" y="288" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="14">containers, cloud, and CI/CD automation.</text>
 
-  <g font-family="monospace" font-size="11" font-weight="bold">
-    <rect x="42" y="319" width="76" height="29" rx="8" fill="#082b37" stroke="#22d3ee" stroke-opacity=".7"/>
-    <text x="80" y="337" fill="#a5f3fc" text-anchor="middle">DOCKER</text>
-    <rect x="128" y="319" width="58" height="29" rx="8" fill="#251942" stroke="#a78bfa" stroke-opacity=".8"/>
-    <text x="157" y="337" fill="#ddd6fe" text-anchor="middle">AWS</text>
-    <rect x="196" y="319" width="70" height="29" rx="8" fill="#082b37" stroke="#22d3ee" stroke-opacity=".7"/>
-    <text x="231" y="337" fill="#a5f3fc" text-anchor="middle">LINUX</text>
-    <rect x="276" y="319" width="145" height="29" rx="8" fill="#251942" stroke="#a78bfa" stroke-opacity=".8"/>
-    <text x="348" y="337" fill="#ddd6fe" text-anchor="middle">GITHUB ACTIONS</text>
-  </g>
 
-  <path d="M42 377H590" stroke="#64748b" stroke-opacity=".4"/>
-  <text x="42" y="402" fill="#94a3b8" font-family="monospace" font-size="11">CLOUD • CONTAINERS • AUTOMATION</text>
+<g font-family="monospace" font-size="10" font-weight="bold">
+  <rect x="42" y="310" width="76" height="29" rx="8" fill="#082b37" stroke="#22d3ee" stroke-opacity=".7"/>
+  <text x="80" y="328" fill="#a5f3fc" text-anchor="middle">DOCKER</text>
+
+  <rect x="126" y="310" width="58" height="29" rx="8" fill="#251942" stroke="#a78bfa" stroke-opacity=".8"/>
+  <text x="155" y="328" fill="#ddd6fe" text-anchor="middle">AWS</text>
+
+  <rect x="192" y="310" width="70" height="29" rx="8" fill="#082b37" stroke="#22d3ee" stroke-opacity=".7"/>
+  <text x="227" y="328" fill="#a5f3fc" text-anchor="middle">LINUX</text>
+
+  <rect x="270" y="310" width="112" height="29" rx="8" fill="#251942" stroke="#a78bfa" stroke-opacity=".8"/>
+  <text x="326" y="328" fill="#ddd6fe" text-anchor="middle">KUBERNETES</text>
+
+  <rect x="390" y="310" width="100" height="29" rx="8" fill="#082b37" stroke="#22d3ee" stroke-opacity=".7"/>
+  <text x="440" y="328" fill="#a5f3fc" text-anchor="middle">TERRAFORM</text>
+
+  <rect x="42" y="348" width="90" height="29" rx="8" fill="#251942" stroke="#a78bfa" stroke-opacity=".8"/>
+  <text x="87" y="366" fill="#ddd6fe" text-anchor="middle">ANSIBLE</text>
+
+  <rect x="140" y="348" width="70" height="29" rx="8" fill="#082b37" stroke="#22d3ee" stroke-opacity=".7"/>
+  <text x="175" y="366" fill="#a5f3fc" text-anchor="middle">AZURE</text>
+
+  <rect x="218" y="348" width="55" height="29" rx="8" fill="#251942" stroke="#a78bfa" stroke-opacity=".8"/>
+  <text x="245" y="366" fill="#ddd6fe" text-anchor="middle">GIT</text>
+
+  <rect x="281" y="348" width="75" height="29" rx="8" fill="#082b37" stroke="#22d3ee" stroke-opacity=".7"/>
+  <text x="318" y="366" fill="#a5f3fc" text-anchor="middle">GITHUB</text>
+
+  <rect x="364" y="348" width="126" height="29" rx="8" fill="#251942" stroke="#a78bfa" stroke-opacity=".8"/>
+  <text x="427" y="366" fill="#ddd6fe" text-anchor="middle">GITHUB ACTIONS</text>
+</g>
+
+
+  <path d="M42 390H590" stroke="#64748b" stroke-opacity=".4"/>
+<text x="42" y="414" fill="#94a3b8" font-family="monospace" font-size="11">CLOUD • CONTAINERS • AUTOMATION</text>
 
   <rect x="635" y="43" width="320" height="365" rx="25" fill="#0a1022" stroke="url(#neon)" stroke-width="2"/>
   <path d="M657 62H675M657 62V80M933 62H915M933 62V80M657 389H675M657 389V371M933 389H915M933 389V371" fill="none" stroke="#67e8f9" stroke-width="3" stroke-linecap="round"/>
 
-  <image x="655" y="58" width="280" height="340" preserveAspectRatio="xMidYMid meet" clip-path="url(#portrait)" xlink:href="https://raw.githubusercontent.com/Ahmad-000/Ahmad-000/main/devops-character.png.png"/>
-
+<image
+  x="655"
+  y="58"
+  width="280"
+  height="340"
+  preserveAspectRatio="xMidYMid meet"
+  clip-path="url(#portrait)"
+  href="./devops-character.png.png"
+  xlink:href="./devops-character.png.png"
+/>
   <rect x="635" y="43" width="320" height="365" rx="25" fill="none" stroke="#22d3ee" stroke-opacity=".5">
     <animate attributeName="stroke-opacity" values=".2;.9;.2" dur="4s" repeatCount="indefinite"/>
   </rect>
