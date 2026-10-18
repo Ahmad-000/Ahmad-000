@@ -1,7 +1,15 @@
 
 <div align="center">
 
-# 👋 Hi, I'm Ahmad Raza
+👋 Hi, I'm Muhammad Ahmad Raza
+
+<div align="center">
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Aspiring+DevOps+Engineer;Cloud+%26+Automation+Enthusiast;Docker+%7C+AWS+%7C+GitHub+Actions;Building+Automated+CI%2FCD+Pipelines" alt="Typing SVG" />
+</a>
+
+</div>
 
 ### DevOps Engineer | Cloud & Automation Enthusiast
 
