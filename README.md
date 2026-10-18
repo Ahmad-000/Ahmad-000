@@ -14,6 +14,12 @@
   </a>
 </div>
 
+<div align="center">
+  <a href="https://github.com/Ahmad-000">
+    <img src="./github-stats.svg" width="100%" alt="Ahmad Raza premium 3D GitHub profile dashboard"/>
+  </a>
+</div>
+
 </div>
 
 
