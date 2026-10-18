@@ -10,6 +10,12 @@
 
 </div>
 
+<h2 align="center">🎓 Student Identity</h2>
+
+<div align="center">
+  <img src="./student-id.svg" width="100%" alt="Animated student identity card for Ahmad Raza"/>
+</div>
+
 <h2 align="center">☁️ Cloud & Infrastructure</h2>
 
 <div align="center">
