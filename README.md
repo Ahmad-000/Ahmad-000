@@ -10,25 +10,15 @@
   <img src="./cloud-infrastructure.svg" width="100%" alt="3D cyberpunk Cloud and Infrastructure card"/>
 </div>
 
-🚀 Featured Project
+<h2 align="center">🚀 Featured Project</h2>
 
-<table>
-  <tr>
-    <td width="35%" align="center" valign="middle">
-      <img src="./ahmad.png" width="200" alt="Developer pointing toward the featured project" />
-    </td>
-    <td width="65%" valign="middle">
-      <h3>
-        <a href="https://github.com/Ahmad-000/mern-devops-automation">MERN DevOps Automation</a>
-      </h3>
-      <p><strong>Docker · AWS EC2 · Docker Compose · GitHub Actions</strong></p>
-      <p>A containerized MERN application deployed on AWS EC2, with a focus on deployment automation, containerization, and CI/CD using GitHub Actions.</p>
-      <p>
-        <a href="https://github.com/Ahmad-000/mern-devops-automation">View Project on GitHub →</a>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="https://github.com/Ahmad-000/mern-devops-automation">
+    <img src="./featured-project.svg"
+         width="100%"
+         alt="MERN DevOps Automation project with Docker, GitHub Actions and AWS"/>
+  </a>
+</div>
 
 📊 3D GitHub Contributions
 
