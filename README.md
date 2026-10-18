@@ -28,7 +28,9 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Ahmad-000&label=PROFILE%20VIEWS&color=00eaff&style=for-the-badge" alt="Profile visitor counter"/>
 </p>
-
+<div align="center">
+  <img src="./footer.svg" width="100%" alt="Animated DevOps closing banner"/>
+</div>
 </div>
 
 
