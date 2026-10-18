@@ -76,9 +76,26 @@ Development
 
 </div>
 
-## 🤝 Connect With Me
+<br/><br/>
 
-- [GitHub](https://github.com/Ahmad-000)
-- [LinkedIn](https://www.linkedin.com/in/muhammad-ahmed-raza-591b67277/)
+🤝 Connect With Me
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/muhammad-ahmed-raza-devops/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" />
+</a>
+<a href="mailto:ahmad.ah1035@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact me by email" />
+</a>
+<a href="https://github.com/Ahmad-000">
+  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="Follow me on GitHub" />
+</a>
+
+<br/><br/>
+
+Open to DevOps, Cloud Engineering, and CI/CD opportunities.
+
+</div>
 
 </div>
