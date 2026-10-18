@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b18"/>
+      <stop offset=".55" stop-color="#10152b"/>
+      <stop offset="1" stop-color="#090b1b"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b304b" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#15132c" stop-opacity=".98"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00eaff"/>
+      <stop offset=".52" stop-color="#7185ff"/>
+      <stop offset="1" stop-color="#d66bff"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087eaa"/>
+      <stop offset="1" stop-color="#633b9e"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#7791ba" stroke-opacity=".1"/>
+    </pattern>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+    <style>
+      .eyebrow{font:11px Arial,sans-serif;letter-spacing:3px;fill:#80eaff}
+      .heading{font:700 24px Arial,sans-serif;fill:#f4f7ff}
+      .body{font:13px Arial,sans-serif;fill:#a9bbd9}
+      .small{font:10px Arial,sans-serif;letter-spacing:1.5px;fill:#8299bd}
+      .number{font:700 26px Arial,sans-serif;fill:#f4f7ff}
+      .chip{font:700 12px Arial,sans-serif;fill:#eaf5ff;letter-spacing:.5px}
+      .float{animation:float 4s ease-in-out infinite}
+      .float2{animation:float 5s ease-in-out infinite 1s}
+      .pulse{animation:pulse 3s ease-in-out infinite}
+      .spin{transform-origin:836px 155px;animation:spin 18s linear infinite}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+      @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="470" rx="24" fill="url(#bg)"/>
+  <rect width="1000" height="470" rx="24" fill="url(#grid)"/>
+  <circle cx="130" cy="110" r="150" fill="#00eaff" opacity=".08" filter="url(#softGlow)"/>
+  <circle cx="900" cy="350" r="180" fill="#a855f7" opacity=".09" filter="url(#softGlow)"/>
+
+  <!-- Header -->
+  <text x="42" y="42" class="eyebrow">GITHUB / DEVELOPER PROFILE</text>
+  <text x="958" y="42" text-anchor="end" class="small">AHMAD-000</text>
+  <circle cx="46" cy="72" r="4" fill="#00eaff" filter="url(#glow)"/>
+  <text x="60" y="76" class="small">DEVOPS ENGINEERING • CLOUD • AUTOMATION</text>
+
+  <!-- Main glass panel -->
+  <path d="M42 100H938L966 128V405L938 433H42L22 413V120Z"
+        fill="#020513" opacity=".8" transform="translate(0 9)"/>
+  <path d="M42 100H938L966 128V405L938 433H42L22 413V120Z"
+        fill="url(#glass)" stroke="url(#neon)" stroke-width="1.6"/>
+  <path d="M42 433H938L966 405V420L938 448H42L22 428V413Z"
+        fill="url(#side)" opacity=".85"/>
+  <path d="M938 100L966 128V405L938 433Z" fill="#a855f7" opacity=".12"/>
+
+  <!-- Left: profile identity -->
+  <text x="55" y="137" class="eyebrow">01 / PROFILE</text>
+  <text x="55" y="177" class="heading">Ahmad Raza</text>
+  <text x="55" y="201" class="body">DevOps &amp; Cloud Learner</text>
+  <text x="55" y="223" class="body">Building, containerizing and</text>
+  <text x="55" y="242" class="body">deploying real-world applications.</text>
+
+  <!-- Neon divider -->
+  <rect x="55" y="260" width="355" height="1.5" fill="url(#neon)" opacity=".7"/>
+
+  <!-- Real project highlight -->
+  <text x="55" y="285" class="eyebrow">FEATURED BUILD</text>
+  <text x="55" y="310" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#f4f7ff">MERN DevOps Automation</text>
+  <text x="55" y="331" class="body">Docker • AWS EC2 • GitHub Actions</text>
+  <rect x="55" y="350" width="160" height="29" rx="8" fill="#102b3e" stroke="#00dfff" stroke-opacity=".85"/>
+  <text x="135" y="369" text-anchor="middle" class="chip">VIEW PROJECT ↗</text>
+
+  <!-- Right: holographic orbital visual -->
+  <g class="pulse">
+    <circle cx="796" cy="176" r="99" fill="#00eaff" opacity=".04" filter="url(#softGlow)"/>
+    <circle cx="796" cy="176" r="77" fill="none" stroke="#00eaff" stroke-opacity=".35" stroke-width="1.2"/>
+    <circle cx="796" cy="176" r="61" fill="none" stroke="#a66cff" stroke-opacity=".55" stroke-width="1.2" stroke-dasharray="4 7"/>
+    <circle cx="796" cy="176" r="45" fill="#10243e" stroke="url(#neon)" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="796" y="171" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#9fefff" letter-spacing="2">BUILD</text>
+    <text x="796" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#ffffff">DEPLOY</text>
+  </g>
+  <g class="spin">
+    <circle cx="873" cy="176" r="5" fill="#00eaff" filter="url(#glow)"/>
+    <circle cx="719" cy="176" r="4" fill="#d66bff" filter="url(#glow)"/>
+    <circle cx="796" cy="99" r="4" fill="#ffffff" filter="url(#glow)"/>
+  </g>
+
+  <!-- Bottom stat cards -->
+  <g class="float">
+    <rect x="455" y="282" width="145" height="93" rx="12" fill="#101e34" stroke="#00dfff" stroke-opacity=".7"/>
+    <text x="472" y="307" class="small">PROJECT FOCUS</text>
+    <text x="472" y="341" class="number">MERN</text>
+    <text x="472" y="359" class="small">APP STACK</text>
+  </g>
+  <g class="float2">
+    <rect x="613" y="282" width="145" height="93" rx="12" fill="#171a39" stroke="#8585ff" stroke-opacity=".8"/>
+    <text x="630" y="307" class="small">CLOUD TARGET</text>
+    <text x="630" y="341" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#f4f7ff">AWS</text>
+    <text x="630" y="359" class="small">EC2 DEPLOYMENT</text>
+  </g>
+  <g class="float">
+    <rect x="771" y="282" width="155" height="93" rx="12" fill="#201733" stroke="#d66bff" stroke-opacity=".8"/>
+    <text x="788" y="307" class="small">NEXT MILESTONE</text>
+    <text x="788" y="341" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#f4f7ff">K8S</text>
+    <text x="788" y="359" class="small">LEARNING ROADMAP</text>
+  </g>
+
+  <!-- Decorative pipeline progress -->
+  <text x="455" y="405" class="small">AUTOMATION PIPELINE • DECORATIVE VISUAL</text>
+  <rect x="455" y="415" width="471" height="3" rx="1.5" fill="#243451"/>
+  <rect x="455" y="415" width="330" height="3" rx="1.5" fill="url(#neon)" filter="url(#glow)">
+    <animate attributeName="width" values="220;400;300;380;220" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Footer -->
+  <text x="42" y="462" class="small">LEARN / BUILD / AUTOMATE / REPEAT</text>
+  <text x="958" y="462" text-anchor="end" class="small">ALWAYS IN PROGRESS</text>
+</svg>
