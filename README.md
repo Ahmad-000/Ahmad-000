@@ -1,76 +1,66 @@
-
 <div align="center">
 
-👋 Hi, I'm Muhammad Ahmad Raza
-
-<div align="center">
+<h1>👋 Hi, I'm Muhammad Ahmad Raza</h1>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Aspiring+DevOps+Engineer;Cloud+%26+Automation+Enthusiast;Docker+%7C+AWS+%7C+GitHub+Actions;Building+Automated+CI%2FCD+Pipelines" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Aspiring+DevOps+Engineer;Cloud+%26+Automation+Enthusiast;Docker+%7C+AWS+%7C+GitHub+Actions;Building+Automated+CI%2FCD+Pipelines" alt="Typing animation showing DevOps-focused titles" />
 </a>
 
-</div>
+<h3>DevOps Engineer | Cloud & Automation Enthusiast</h3>
 
-### DevOps Engineer | Cloud & Automation Enthusiast
-
-Building reliable applications through automation, containers, and cloud technologies.
+<p>Building reliable applications through automation, containers, cloud technologies, and CI/CD.</p>
 
 <img src="./devops-character.png.png" width="260" alt="Developer character" />
 
-**Docker · AWS · Azure · Linux · GitHub Actions**
+<p>
+  <strong>Docker · AWS · Azure · Linux · GitHub Actions · Git</strong>
+</p>
 
 </div>
-
----
-
-<div align="center">
 
 🛠️ Technologies & Tools
 
-Cloud & DevOps
+<div align="center">
 
-<img src="https://skillicons.dev/icons?i=aws,azure,docker,linux,githubactions,git,github,terraform" alt="AWS, Azure, Docker, Linux, GitHub Actions, Git, GitHub and Terraform" />
+<h3>Cloud & DevOps</h3>
 
-Development
+<img src="https://skillicons.dev/icons?i=aws,azure,docker,linux,githubactions,git,github,terraform" alt="AWS, Azure, Docker, Linux, GitHub Actions, Git, GitHub, and Terraform" />
 
-<img src="https://skillicons.dev/icons?i=javascript,nodejs,react,mongodb,express" alt="JavaScript, Node.js, React, MongoDB and Express" />
+<h3>Development</h3>
+
+<img src="https://skillicons.dev/icons?i=javascript,nodejs,react,mongodb,express" alt="JavaScript, Node.js, React, MongoDB, and Express" />
 
 </div>
 
----
-
-## 🚀 Featured Project
+🚀 Featured Project
 
 <table>
   <tr>
     <td width="35%" align="center" valign="middle">
-      <img src="./ahmad.png" width="200" alt="Developer pointing toward project" />
+      <img src="./ahmad.png" width="200" alt="Developer pointing toward the featured project" />
     </td>
     <td width="65%" valign="middle">
       <h3>
-        <a href="https://github.com/Ahmad-000/mern-devops-automation">
-          MERN DevOps Automation
-        </a>
+        <a href="https://github.com/Ahmad-000/mern-devops-automation">MERN DevOps Automation</a>
       </h3>
-      Docker · AWS EC2 · CI/CD
+      <p><strong>Docker · AWS EC2 · Docker Compose · GitHub Actions</strong></p>
+      <p>A containerized MERN application deployed on AWS EC2, with a focus on deployment automation, containerization, and CI/CD using GitHub Actions.</p>
       <p>
-        A containerized MERN application deployed on AWS EC2,
-        with automated CI/CD being implemented.
+        <a href="https://github.com/Ahmad-000/mern-devops-automation">View Project on GitHub →</a>
       </p>
-      <a href="https://github.com/Ahmad-000/mern-devops-automation">
-        View project on GitHub →
-      </a>
     </td>
   </tr>
 </table>
 
----
+📊 3D GitHub Contributions
 
 <div align="center">
-  <img src="./profile-night-green.svg" width="100%" alt="Animated 3D GitHub contribution graph" />
+
+<img src="./profile-night-green.svg" width="100%" alt="3D GitHub contribution graph" />
+
 </div>
 
----
+📈 GitHub Statistics
 
 <div align="center">
 
@@ -83,8 +73,6 @@ Development
 <img src="https://streak-stats.demolab.com?user=Ahmad-000&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" />
 
 </div>
-
-<br/><br/>
 
 🤝 Connect With Me
 
@@ -102,22 +90,20 @@ Development
 
 <br/><br/>
 
-Open to DevOps, Cloud Engineering, and CI/CD opportunities.
+<strong>Open to DevOps, Cloud Engineering, and CI/CD opportunities.</strong>
 
 </div>
 
 <div align="center">
 
-👀 Profile Visitors
+<h3>👀 Profile Visitors</h3>
 
 <img src="https://komarev.com/ghpvc/?username=Ahmad-000&label=Profile%20Views&color=00D9FF&style=for-the-badge" alt="Profile visitor counter" />
 
 <br/><br/>
 
-Thanks for visiting my profile!
+<p><em>Thanks for visiting my profile!</em></p>
 
-Let's build, automate, and deploy something great. 🚀
-
-</div>
+<strong>Let's build, automate, and deploy something great. 🚀</strong>
 
 </div>
