@@ -1,95 +1,71 @@
-
 <div align="center">
 
-<img src="./hero.svg" width="100%" alt="Animated cyberpunk DevOps hero" />
-<img src="./about-cards.svg" width="100%" alt="Cyberpunk DevOps terminal" />
-<div align="center">
-  <img src="./cloud-infrastructure.svg" width="100%" alt="3D cyberpunk Cloud and Infrastructure card"/>
+  <img src="./hero.svg" width="100%" alt="Animated cyberpunk DevOps hero" />
+
 </div>
+
 <div align="center">
+
+  <img src="./about-cards.svg" width="100%" alt="About Ahmad Raza — DevOps terminal dashboard" />
+
+</div>
+
+<h2 align="center">☁️ Cloud & Infrastructure</h2>
+
+<div align="center">
+
+  <img src="./cloud-infrastructure.svg" width="100%" alt="Cloud, infrastructure, containerization and DevOps skills" />
+
+</div>
+
+<h2 align="center">🚀 Featured Project</h2>
+
+<div align="center">
+
   <a href="https://github.com/Ahmad-000/mern-devops-automation">
-    <img src="./featured-project.svg"
-         width="100%"
-         alt="MERN DevOps Automation project with Docker, GitHub Actions and AWS"/>
+    <img src="./featured-project.svg" width="100%" alt="MERN DevOps Automation using Docker, GitHub Actions and AWS EC2" />
   </a>
+
+  <p>
+    <a href="https://github.com/Ahmad-000/mern-devops-automation">Explore the project on GitHub →</a>
+  </p>
+
 </div>
 
+<h2 align="center">📊 GitHub Activity</h2>
+
 <div align="center">
+
   <a href="https://github.com/Ahmad-000">
-    <img src="./github-stats.svg" width="100%" alt="Ahmad Raza premium 3D GitHub profile dashboard"/>
+    <img src="./github-stats.svg" width="100%" alt="Ahmad Raza's GitHub activity dashboard" />
   </a>
+
 </div>
 
+<h2 align="center">🌐 Connect With Me</h2>
+
 <div align="center">
-  <a href="https://www.linkedin.com/in/muhammad-ahmed-raza-devops/">
-    <img src="./connect.svg" width="100%" alt="Connect with Ahmad Raza on LinkedIn, GitHub, or email"/>
-  </a>
+
+  <img src="./connect.svg" width="100%" alt="Connect with Ahmad Raza" />
+
+  <p>
+    <a href="https://www.linkedin.com/in/muhammad-ahmed-raza-devops/">LinkedIn</a>
+    &nbsp; • &nbsp;
+    <a href="https://github.com/Ahmad-000">GitHub</a>
+    &nbsp; • &nbsp;
+    <a href="mailto:ahmad.ah1035@gmail.com">Email</a>
+  </p>
+
 </div>
+
+<h2 align="center">👁️ Profile Visitors</h2>
+
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Ahmad-000&label=PROFILE%20VIEWS&color=00eaff&style=for-the-badge" alt="Profile visitor counter"/>
+  <img src="https://komarev.com/ghpvc/?username=Ahmad-000&label=PROFILE%20VIEWS&color=00eaff&style=for-the-badge" alt="Profile visitor counter" />
 </p>
-<div align="center">
-  <img src="./footer.svg" width="100%" alt="Animated DevOps closing banner"/>
-</div>
-</div>
-
-
-
-
-
-
-📊 3D GitHub Contributions
 
 <div align="center">
 
-<img src="./profile-night-green.svg" width="100%" alt="3D GitHub contribution graph" />
-
-</div>
-
-📈 GitHub Statistics
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Ahmad-000&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub statistics" />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ahmad-000&layout=compact&theme=tokyonight&hide_border=true" alt="Most used programming languages" />
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=Ahmad-000&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" />
-
-</div>
-
-🤝 Connect With Me
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/muhammad-ahmed-raza-devops/">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" />
-</a>
-<a href="mailto:ahmad.ah1035@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact me by email" />
-</a>
-<a href="https://github.com/Ahmad-000">
-  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="Follow me on GitHub" />
-</a>
-
-<br/><br/>
-
-<strong>Open to DevOps, Cloud Engineering, and CI/CD opportunities.</strong>
-
-</div>
-
-<div align="center">
-
-<h3>👀 Profile Visitors</h3>
-
-<img src="https://komarev.com/ghpvc/?username=Ahmad-000&label=Profile%20Views&color=00D9FF&style=for-the-badge" alt="Profile visitor counter" />
-
-<br/><br/>
-
-<p><em>Thanks for visiting my profile!</em></p>
-
-<strong>Let's build, automate, and deploy something great. 🚀</strong>
+  <img src="./footer.svg" width="100%" alt="Animated DevOps closing banner" />
 
 </div>
