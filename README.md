@@ -25,7 +25,9 @@
     <img src="./connect.svg" width="100%" alt="Connect with Ahmad Raza on LinkedIn, GitHub, or email"/>
   </a>
 </div>
-
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Ahmad-000&label=PROFILE%20VIEWS&color=00eaff&style=for-the-badge" alt="Profile visitor counter"/>
+</p>
 
 </div>
 
