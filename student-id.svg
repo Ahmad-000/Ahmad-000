@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="490" viewBox="0 0 1000 490" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="0" x2="920" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080D1B"/>
+      <stop offset=".55" stop-color="#11132D"/>
+      <stop offset="1" stop-color="#071923"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="250" y1="100" x2="750" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172744" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#0A1328" stop-opacity=".98"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="300" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F5FF"/>
+      <stop offset="1" stop-color="#8A73FF"/>
+    </linearGradient>
+    <linearGradient id="photo" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#193D59"/>
+      <stop offset="1" stop-color="#35204E"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#7C8CFF" stroke-opacity=".08" fill="none"/>
+    </pattern>
+    <clipPath id="cardClip">
+      <rect x="252" y="104" width="496" height="280" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1000" height="490" rx="24" fill="url(#bg)"/>
+  <rect width="1000" height="490" rx="24" fill="url(#grid)"/>
+
+  <path d="M0 70H185L215 40H340" stroke="#00F5FF" stroke-opacity=".4"/>
+  <path d="M1000 410H820L790 440H660" stroke="#A855F7" stroke-opacity=".4"/>
+  <circle cx="145" cy="190" r="3" fill="#00F5FF" filter="url(#glow)"/>
+  <circle cx="855" cy="280" r="3" fill="#B77BFF" filter="url(#glow)"/>
+
+  <text x="500" y="40" text-anchor="middle" fill="#9AB0D7" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="4">
+    DIGITAL IDENTITY / STUDENT PROFILE
+  </text>
+
+  <!-- Retractable lanyard -->
+  <g>
+    <path d="M430 0V35Q430 48 443 48H557Q570 48 570 35V0" stroke="#293A5B" stroke-width="13" stroke-linecap="round"/>
+    <path d="M430 0V35Q430 48 443 48H557Q570 48 570 35V0" stroke="url(#cyan)" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="467" y="35" width="66" height="20" rx="7" fill="#17233D" stroke="#00E5FF" stroke-opacity=".7"/>
+    <circle cx="500" cy="45" r="4" fill="#00F5FF"/>
+  </g>
+
+  <!-- The ID card drops into place, then swings gently -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,-340;0,14;0,-8;0,0;0,0"
+      keyTimes="0;0.45;0.58;0.72;1"
+      dur="2.4s" begin="0s" fill="freeze"/>
+
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-8 500 104;5 500 104;-3 500 104;2 500 104;-1 500 104;0 500 104"
+        keyTimes="0;0.25;0.45;0.65;0.82;1"
+        dur="3.2s" begin="2.4s" repeatCount="indefinite"/>
+
+      <rect x="252" y="104" width="496" height="280" rx="22" fill="#00E5FF" fill-opacity=".12" filter="url(#glow)"/>
+      <rect x="252" y="104" width="496" height="280" rx="22" fill="url(#glass)" stroke="url(#cyan)" stroke-width="1.7"/>
+
+      <g clip-path="url(#cardClip)">
+        <path d="M252 126Q252 104 274 104H726Q748 104 748 126V157H252Z" fill="#182844"/>
+        <path d="M252 156H748" stroke="#00E5FF" stroke-opacity=".5"/>
+        <path d="M690 104L748 162V104Z" fill="#8B5CF6" fill-opacity=".13"/>
+
+        <text x="278" y="132" fill="#F1F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="1.5">
+          STUDENT IDENTITY
+        </text>
+        <text x="721" y="131" text-anchor="end" fill="#7DEFFF" font-family="Consolas,monospace" font-size="10">
+          DIGITAL CARD
+        </text>
+
+        <!-- Photo frame: replace the placeholder with your profile image -->
+        <rect x="279" y="178" width="135" height="155" rx="12" fill="url(#photo)" stroke="#00E5FF" stroke-opacity=".8"/>
+        <rect x="287" y="186" width="119" height="139" rx="8" fill="#101C34" stroke="#7188FF" stroke-opacity=".35"/>
+
+        <!-- Initials placeholder until a profile photo is added -->
+        <circle cx="346" cy="225" r="25" fill="#1E3A5F" stroke="#00E5FF" stroke-opacity=".65"/>
+        <text x="346" y="233" text-anchor="middle" fill="#D8FCFF" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">AR</text>
+        <path d="M308 293Q311 263 346 263Q381 263 384 293V312H308Z" fill="#263C61" stroke="#8B7BFF" stroke-opacity=".7"/>
+        <text x="346" y="347" text-anchor="middle" fill="#7C91B8" font-family="Consolas,monospace" font-size="8">PROFILE PHOTO</text>
+
+        <!-- Identity details -->
+        <text x="437" y="188" fill="#7B91B8" font-family="Segoe UI,Arial,sans-serif" font-size="10" letter-spacing="1.5">FULL NAME</text>
+        <text x="437" y="212" fill="#FFFFFF" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">Ahmad Raza</text>
+
+        <text x="437" y="240" fill="#7B91B8" font-family="Segoe UI,Arial,sans-serif" font-size="10" letter-spacing="1.5">FIELD OF STUDY</text>
+        <text x="437" y="259" fill="#D7E8FF" font-family="Segoe UI,Arial,sans-serif" font-size="14">Software Engineering</text>
+
+        <text x="437" y="286" fill="#7B91B8" font-family="Segoe UI,Arial,sans-serif" font-size="10" letter-spacing="1.5">UNIVERSITY</text>
+        <text x="437" y="305" fill="#D7E8FF" font-family="Segoe UI,Arial,sans-serif" font-size="13">COMSATS University</text>
+        <text x="437" y="322" fill="#D7E8FF" font-family="Segoe UI,Arial,sans-serif" font-size="13">Islamabad · Abbottabad Campus</text>
+
+        <path d="M279 356H721" stroke="#4E6388" stroke-opacity=".55"/>
+        <text x="279" y="373" fill="#76EFFF" font-family="Consolas,monospace" font-size="9" letter-spacing="1">SOFTWARE • CLOUD • DEVOPS</text>
+        <text x="721" y="373" text-anchor="end" fill="#B6A0FF" font-family="Consolas,monospace" font-size="9">LEARN / BUILD / DEPLOY</text>
+      </g>
+    </g>
+  </g>
+
+  <g opacity=".8">
+    <path d="M300 415H430" stroke="#00E5FF" stroke-opacity=".5"/>
+    <path d="M570 415H700" stroke="#A855F7" stroke-opacity=".5"/>
+    <text x="500" y="420" text-anchor="middle" fill="#A8B8D7" font-family="Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="2">
+      ENGINEERING MY FUTURE
+    </text>
+  </g>
+
+  <text x="500" y="460" text-anchor="middle" fill="#5F7399" font-family="Consolas,monospace" font-size="10">
+    ID CARD ANIMATION • DROP + PENDULUM SWING
+  </text>
+</svg>
