@@ -52,12 +52,8 @@ Building reliable applications through automation, containers, and cloud technol
 
 ---
 
-## 📊 3D GitHub Contributions
-
 <div align="center">
-
-<img src="./profile-3d-contrib/profile-green-animate.svg" width="90%" alt="3D GitHub contribution graph" />
-
+  <img src="./profile-green-animate.svg" width="100%" alt="Animated 3D GitHub contribution graph" />
 </div>
 
 ---
