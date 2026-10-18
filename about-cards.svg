@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050914"/>
+      <stop offset=".5" stop-color="#10102a"/>
+      <stop offset="1" stop-color="#050914"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#14243d" stop-opacity=".97"/>
+      <stop offset="1" stop-color="#15102e" stop-opacity=".95"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00f5ff"/>
+      <stop offset=".5" stop-color="#6585ff"/>
+      <stop offset="1" stop-color="#d946ef"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#5264a1" stroke-opacity=".18" stroke-width=".7"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+      <feOffset dy="8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .mono { font-family: Consolas, "Courier New", monospace; }
+      .white { fill: #edf6ff; }
+      .cyan { fill: #67f7ff; }
+      .muted { fill: #9baed0; }
+      .purple { fill: #d5a3ff; }
+      .small { font-size: 12px; }
+      .label { font-size: 11px; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- Cyberpunk environment -->
+  <rect width="1000" height="440" rx="22" fill="url(#bg)"/>
+  <rect width="1000" height="440" rx="22" fill="url(#grid)"/>
+  <ellipse cx="500" cy="230" rx="360" ry="190" fill="#5b21b6" opacity=".09">
+    <animate attributeName="opacity" values=".04;.15;.04" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Moving background beams -->
+  <path d="M-120 355 L340 -30" stroke="#00e5ff" stroke-width="1" opacity=".28">
+    <animate attributeName="opacity" values=".08;.5;.08" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M620 470 L1080 80" stroke="#b44dff" stroke-width="1.4" opacity=".3">
+    <animate attributeName="opacity" values=".08;.5;.08" dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Header -->
+  <text x="32" y="42" class="mono cyan label">AHMAD RAZA // DEVOPS ENGINEER IN PROGRESS</text>
+  <text x="968" y="42" text-anchor="end" class="mono muted small">SYSTEM ONLINE</text>
+  <circle cx="847" cy="38" r="4" fill="#46ffb1" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;.25;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M32 58 H968" stroke="url(#neon)" opacity=".75"/>
+
+  <!-- Terminal shadow and 3D side face -->
+  <g filter="url(#shadow)">
+    <path d="M48 103 L640 103 L661 118 L661 354 L640 369 L48 369 Z" fill="#090c1a" stroke="#00e5ff" stroke-opacity=".55"/>
+    <path d="M640 103 L661 118 L661 354 L640 369 Z" fill="#24204a" stroke="#9b5cff" stroke-opacity=".8"/>
+    <path d="M48 103 L640 103 L661 118 L69 118 Z" fill="#263650" stroke="#4cefff" stroke-opacity=".7"/>
+    <rect x="48" y="118" width="592" height="251" rx="5" fill="url(#glass)" stroke="#35577d"/>
+  </g>
+
+  <!-- Terminal title bar -->
+  <path d="M48 145 H640" stroke="#344966"/>
+  <circle cx="67" cy="132" r="4" fill="#ff657a"/>
+  <circle cx="82" cy="132" r="4" fill="#ffc857"/>
+  <circle cx="97" cy="132" r="4" fill="#40f7b2"/>
+  <text x="344" y="136" text-anchor="middle" class="mono muted small">ahmad@devops-lab: ~</text>
+
+  <!-- Terminal content -->
+  <g class="mono" font-size="14">
+    <text x="72" y="176" class="cyan">$ whoami</text>
+    <text x="72" y="199" class="white">Aspiring DevOps Engineer</text>
+
+    <text x="72" y="230" class="cyan">$ docker ps</text>
+    <text x="72" y="253" class="purple">mern-frontend   running</text>
+    <text x="72" y="275" class="purple">mern-backend    running</text>
+    <text x="72" y="297" class="purple">mongodb         healthy</text>
+
+    <text x="72" y="328" class="cyan">$ deploy --environment aws</text>
+    <text x="72" y="350" fill="#46ffb1">Pipeline ready for automation.</text>
+  </g>
+
+  <!-- Blinking terminal cursor -->
+  <rect x="72" y="358" width="8" height="2" fill="#67f7ff">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Floating status panel -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="4s" repeatCount="indefinite"/>
+      <rect x="692" y="100" width="265" height="112" rx="12" fill="url(#glass)" stroke="url(#neon)" stroke-width="1.4"/>
+      <path d="M692 128 H957" stroke="#405275"/>
+      <text x="709" y="119" class="mono cyan small">01 / DEPLOYMENT STATUS</text>
+      <circle cx="714" cy="151" r="4" fill="#46ffb1" filter="url(#glow)"/>
+      <text x="727" y="155" class="mono white" font-size="13">Docker containers</text>
+      <text x="937" y="155" text-anchor="end" class="mono" fill="#46ffb1" font-size="12">READY</text>
+      <rect x="710" y="174" width="229" height="5" rx="2.5" fill="#253651"/>
+      <rect x="710" y="174" width="229" height="5" rx="2.5" fill="url(#neon)">
+        <animate attributeName="width" values="30;229;180;229" dur="5s" repeatCount="indefinite"/>
+      </rect>
+      <text x="710" y="198" class="mono muted small">CI/CD • AWS • AUTOMATION</text>
+    </g>
+  </g>
+
+  <!-- Floating tech panel -->
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 5;0 0" dur="3.5s" repeatCount="indefinite"/>
+      <rect x="692" y="232" width="265" height="137" rx="12" fill="url(#glass)" stroke="#8b5cf6" stroke-width="1.3"/>
+      <text x="709" y="254" class="mono purple small">02 / TOOLCHAIN</text>
+
+      <g class="mono" font-size="12">
+        <rect x="709" y="270" width="100" height="27" rx="6" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff" stroke-opacity=".7"/>
+        <text x="759" y="287" text-anchor="middle" class="cyan">DOCKER</text>
+        <rect x="819" y="270" width="120" height="27" rx="6" fill="#a855f7" fill-opacity=".12" stroke="#a855f7" stroke-opacity=".8"/>
+        <text x="879" y="287" text-anchor="middle" class="purple">AWS CLOUD</text>
+
+        <rect x="709" y="306" width="100" height="27" rx="6" fill="#a855f7" fill-opacity=".12" stroke="#a855f7" stroke-opacity=".8"/>
+        <text x="759" y="323" text-anchor="middle" class="purple">LINUX</text>
+        <rect x="819" y="306" width="120" height="27" rx="6" fill="#00d9ff" fill-opacity=".1" stroke="#00e5ff" stroke-opacity=".7"/>
+        <text x="879" y="323" text-anchor="middle" class="cyan">GITHUB ACTIONS</text>
+
+        <text x="709" y="352" class="mono muted" font-size="10">LEARNING • BUILDING • IMPROVING</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Animated orbit around a central core -->
+  <g transform="translate(514 232)">
+    <ellipse rx="63" ry="25" fill="none" stroke="#00e5ff" stroke-opacity=".7" stroke-width="1.3" transform="rotate(-32)"/>
+    <ellipse rx="63" ry="25" fill="none" stroke="#a855f7" stroke-opacity=".7" stroke-width="1.3" transform="rotate(32)"/>
+    <ellipse rx="28" ry="65" fill="none" stroke="#7dd3fc" stroke-opacity=".45" stroke-width="1" transform="rotate(55)"/>
+    <circle r="22" fill="#102a48" stroke="url(#neon)" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="r" values="19;23;19" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="5" text-anchor="middle" class="mono cyan" font-size="12" font-weight="bold">CI/CD</text>
+    <circle cx="53" cy="-32" r="5" fill="#00f5ff" filter="url(#glow)"/>
+    <circle cx="-52" cy="33" r="4" fill="#c084fc" filter="url(#glow)"/>
+    <circle cx="4" cy="-65" r="4" fill="#a855f7" filter="url(#glow)"/>
+  </g>
+
+  <!-- Bottom HUD -->
+  <path d="M32 397 H968" stroke="url(#neon)" opacity=".55"/>
+  <text x="34" y="419" class="mono muted small">BUILDING REAL-WORLD DEVOPS PROJECTS</text>
+  <text x="966" y="419" text-anchor="end" class="mono cyan small">LEARN → AUTOMATE → DEPLOY</text>
+
+  <!-- Corner indicators -->
+  <path d="M18 45 V18 H45 M955 18 H982 V45 M18 395 V422 H45 M955 422 H982 V395" fill="none" stroke="#00e5ff" stroke-width="2" opacity=".8"/>
+</svg>
