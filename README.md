@@ -26,13 +26,6 @@
   </a>
 </div>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/muhammad-ahmed-raza-devops/">LinkedIn</a>
-  &nbsp; • &nbsp;
-  <a href="https://github.com/Ahmad-000">GitHub</a>
-  &nbsp; • &nbsp;
-  <a href="mailto:ahmad.ah1035@gmail.com">Email</a>
-</p>
 
 </div>
 
