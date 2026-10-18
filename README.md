@@ -64,6 +64,18 @@ Development
 
 ---
 
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Ahmad-000&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub statistics" />
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ahmad-000&layout=compact&theme=tokyonight&hide_border=true" alt="Most used programming languages" />
+
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=Ahmad-000&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" />
+
+</div>
+
 ## 🤝 Connect With Me
 
 - [GitHub](https://github.com/Ahmad-000)
