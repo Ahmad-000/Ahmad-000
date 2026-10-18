@@ -6,18 +6,8 @@
 
 </div>
 
-🛠️ Technologies & Tools
-
 <div align="center">
-
-<h3>Cloud & DevOps</h3>
-
-<img src="https://skillicons.dev/icons?i=aws,azure,docker,linux,githubactions,git,github,terraform" alt="AWS, Azure, Docker, Linux, GitHub Actions, Git, GitHub, and Terraform" />
-
-<h3>Development</h3>
-
-<img src="https://skillicons.dev/icons?i=javascript,nodejs,react,mongodb,express" alt="JavaScript, Node.js, React, MongoDB, and Express" />
-
+  <img src="./cloud-infrastructure.svg" width="100%" alt="3D cyberpunk Cloud and Infrastructure card"/>
 </div>
 
 🚀 Featured Project
