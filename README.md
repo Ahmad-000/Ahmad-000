@@ -1,20 +1,7 @@
+
 <div align="center">
 
-<h1>👋 Hi, I'm Muhammad Ahmad Raza</h1>
-
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Aspiring+DevOps+Engineer;Cloud+%26+Automation+Enthusiast;Docker+%7C+AWS+%7C+GitHub+Actions;Building+Automated+CI%2FCD+Pipelines" alt="Typing animation showing DevOps-focused titles" />
-</a>
-
-<h3>DevOps Engineer | Cloud & Automation Enthusiast</h3>
-
-<p>Building reliable applications through automation, containers, cloud technologies, and CI/CD.</p>
-
-<img src="./devops-character.png.png" width="260" alt="Developer character" />
-
-<p>
-  <strong>Docker · AWS · Azure · Linux · GitHub Actions · Git</strong>
-</p>
+<img src="./hero.svg" width="100%" alt="Animated cyberpunk DevOps hero" />
 
 </div>
 
